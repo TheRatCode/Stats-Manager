@@ -21,8 +21,18 @@ for (var i = 0; i < ds_map_size(global.statsMap); i++) {
 	}
 	
 	var y_off = 128;
+	var x_off;
+	var real_I;
 	
-	items[i] = instance_create_layer(32, (i*64)+y_off, "Instances", obj_TI_stats_name)
+	if (i < 8) {
+		real_I = i
+		x_off = 32;
+	} else {
+		real_I = i-8;
+		x_off = 320;
+	}
+	
+	items[i] = instance_create_layer(x_off, (real_I*64)+y_off, "Instances", obj_TI_stats_name)
 	
 	with (items[i]) {
 		text_input = textInput;

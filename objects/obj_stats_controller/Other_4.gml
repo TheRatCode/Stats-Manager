@@ -6,8 +6,6 @@ for (var i = 0; i < array_length_1d(items); i++) {
 }
 
 if (room == rm_create_entity) {
-	var y_off = 160;
-	
 	for (var i = 0; i < ds_map_size(global.statsMap); i++) {
 		var titleText = ds_map_find_value(global.statsMap, string(i));
 		
@@ -15,7 +13,19 @@ if (room == rm_create_entity) {
 			continue;	
 		}
 		
-		items[i] = instance_create_layer(32, (i*64)+y_off, "Instances", obj_TI_entity_stats_box)
+		var y_off = 160;
+		var x_off;
+		var real_I;
+	
+		if (i < 8) {
+			real_I = i
+			x_off = 32;
+		} else {
+			real_I = i-8;
+			x_off = 320;
+		}
+		
+		items[i] = instance_create_layer(x_off, (real_I*64)+y_off, "Instances", obj_TI_entity_stats_box)
 			
 		with (items[i]) {
 			title_text = titleText;
