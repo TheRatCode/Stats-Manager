@@ -1,0 +1,1 @@
+room_goto(goto_room);

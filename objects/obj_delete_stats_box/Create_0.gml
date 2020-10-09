@@ -1,0 +1,1 @@
+statsMapIndex = -1;
