@@ -20,5 +20,10 @@ for (var i = 0; i < 9; i++) {
 	with (items[i]) {
 		title_text = ds_map_find_value(tmpMap, "0");
 		entityIndex = access_I;
+		
+		var spr = ds_map_find_value(tmpMap, "1")
+		if (spr != "") {
+			sprite = sprite_add(spr, 1, false, false, 0, 0);
+		}
 	}
 }
