@@ -22,7 +22,7 @@ for (var i = 0; i < 9; i++) {
 		entityIndex = access_I;
 		
 		var spr = ds_map_find_value(tmpMap, "1")
-		if (spr != "") {
+		if (spr != "" && spr != undefined) {
 			sprite = sprite_add(spr, 1, false, false, 0, 0);
 		}
 	}
