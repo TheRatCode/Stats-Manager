@@ -1,0 +1,1 @@
+linkedObject = -1;
