@@ -1,3 +1,4 @@
+//Draw associated sprite, limit size to spr_enemy_box proportions
 if (sprite != -1) {
 	var w = sprite_get_width(sprite);
 	var h = sprite_get_height(sprite);
@@ -10,6 +11,7 @@ if (sprite != -1) {
 
 draw_self();
 
+//Draw entity name
 draw_set_valign(fa_center);
 draw_set_halign(fa_center);
 draw_set_color(c_white);

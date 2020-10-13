@@ -1,11 +1,13 @@
 //Reset list before using
+//Destroy all items in array
 for (var i = 0; i < array_length_1d(items); i++) {
 	if (items[i] != "") {
 		instance_destroy(items[i]);
 	}
 }
 
-if (room == rm_create_entity) { //Spawn all stat boxes
+if (room == rm_create_entity) { 
+	//Spawn all stat boxes
 	for (var i = 0; i < ds_map_size(global.statsMap); i++) {
 		var titleText = ds_map_find_value(global.statsMap, string(i));
 		
@@ -13,6 +15,7 @@ if (room == rm_create_entity) { //Spawn all stat boxes
 			continue;	
 		}
 		
+		//Loop values for proper instance position creation
 		var y_off = 160;
 		var x_off;
 		var real_I;

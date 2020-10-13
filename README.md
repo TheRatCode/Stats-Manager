@@ -1,6 +1,6 @@
 # Stats Manager
  Simple stats manager to help with creating games!
-- Create an infinite number of entities based on an optional 16 nameable stats.
+- Create an infinite number of entities based on an optional 16 stats.
 - Add up to 16 tags to easily sort groups of entities.
 - Save & Load stats and entities to .txt files in a JSON format.
 
@@ -8,7 +8,7 @@
 If you would like to use the saved JSON formatted .txt files directly in your game the associated format is as follows:
 All keys are integers as strings, and are enumerable from 0 to # to easily loop through all contents.
 
-The main three maps are as follows:
+The main three maps are as follows, and contains maps as values:
 | Key | Value |
 | ------ | ------ |
 | 0 | Stats Map |

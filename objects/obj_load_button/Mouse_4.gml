@@ -1,5 +1,4 @@
 var fileStr = get_open_filename("Load File|*.txt", "");
-//get_save_filename_ext("Load File|*.txt", "Save1", working_directory, "Stats Manager Loading");
 
 if (fileStr != "") {
 	var file = file_text_open_read(fileStr);

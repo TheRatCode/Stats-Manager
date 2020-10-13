@@ -1,4 +1,3 @@
-//draw_self();
 var centerWidth = ((sprite_width)-64)/32;
 var xOff = 32;
 draw_sprite(spr_box_left, -1, x, y);
