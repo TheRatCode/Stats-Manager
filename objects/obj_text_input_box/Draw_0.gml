@@ -1,8 +1,24 @@
-draw_self();
+//draw_self();
+var centerWidth = ((sprite_width)-64)/32;
+var xOff = 32;
+draw_sprite(spr_box_left, -1, x, y);
+for (var i = 0; i < centerWidth; i++) {
+	draw_sprite(spr_box_middle, -1, x+xOff, y);
+	xOff += 32;
+}
+draw_sprite(spr_box_right, -1, x+xOff, y);
+
 
 if (selected) {
 	draw_set_color(c_white);
-	draw_sprite_ext(spr_text_input_box_selected, -1, x, y, image_xscale, image_yscale, 0, c_white, 1);
+	
+	xOff = 32;
+	draw_sprite(spr_box_left_selected, -1, x, y);
+	for (var i = 0; i < centerWidth; i++) {
+		draw_sprite(spr_box_middle_selected, -1, x+xOff, y);
+		xOff += 32;
+	}
+	draw_sprite(spr_box_right_selected, -1, x+xOff, y);
 	
 	if (show_cursor) {
 		draw_set_color(c_black);
