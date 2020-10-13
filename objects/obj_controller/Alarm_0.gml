@@ -13,6 +13,8 @@ for (var i = 0; i < ds_map_size(global.statsMap); i++) {
 	}
 }
 
+var real_I = 0;
+
 for (var i = 0; i < ds_map_size(global.statsMap); i++) {
 	var textInput = ds_map_find_value(global.statsMap, string(i));
 	
@@ -22,24 +24,26 @@ for (var i = 0; i < ds_map_size(global.statsMap); i++) {
 	
 	var y_off = 128;
 	var x_off;
-	var real_I;
+	var offset_I;
 	
-	if (i < 8) {
-		real_I = i
+	if (real_I < 8) {
+		offset_I = real_I
 		x_off = 32;
 	} else {
-		real_I = i-8;
+		offset_I = real_I-8;
 		x_off = 320;
 	}
 	
-	items[i] = instance_create_layer(x_off, (real_I*64)+y_off, "Instances", obj_TI_stats_name)
+	items[real_I] = instance_create_layer(x_off, (offset_I*64)+y_off, "Instances", obj_TI_stats_name)
 	
-	with (items[i]) {
+	with (items[real_I]) {
 		text_input = textInput;
 		statsMapIndex = i;
 		
-		if (i == statsCount-1) { //If this is the last entry
+		if (real_I == statsCount-1) { //If this is the last entry
 			canDelete = true;
 		}
 	}
+	
+	real_I++;
 }

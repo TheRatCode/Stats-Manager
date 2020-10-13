@@ -1,7 +1,7 @@
 event_inherited();
-title_text = "Stat Name";
+title_text = "Tag Name";
 
-statsMapIndex = -1;
+tagsMapIndex = -1;
 
 canDelete = false;
 deleteObj = -1;
