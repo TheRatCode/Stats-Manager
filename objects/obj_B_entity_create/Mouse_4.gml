@@ -9,7 +9,9 @@ var tagObjArray = ds_list_create();
 for (var i = 0; i < numTags; i++) {
 	var tagObj = instance_find(obj_B_entity_tags_box, i);
 	
-	ds_list_add(tagObjArray, tagObj.title_text);
+	if (tagObj.selected) {
+		ds_list_add(tagObjArray, tagObj.title_text);
+	}
 }
 ds_map_add_list(statsArray, "2", tagObjArray);
 
