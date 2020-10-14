@@ -4,7 +4,7 @@ if (fileStr != "") {
 	var mapToWrite = ds_map_create();
 	ds_map_add_map(mapToWrite, "0", global.statsMap);
 	ds_map_add_map(mapToWrite, "1", global.entitiesMap);
-	ds_map_add_map(mapToWrite, "2", global.spritesMap);
+	ds_map_add_map(mapToWrite, "2", global.entityTags);
 	
 	var file = file_text_open_write(fileStr);
 	file_text_write_string(file, json_encode(mapToWrite));

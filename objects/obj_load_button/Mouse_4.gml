@@ -7,5 +7,5 @@ if (fileStr != "") {
 	
 	ds_map_copy(global.statsMap, ds_map_find_value(mapToRead, "0"));
 	ds_map_copy(global.entitiesMap, ds_map_find_value(mapToRead, "1"));
-	ds_map_copy(global.spritesMap, ds_map_find_value(mapToRead, "2"));
+	ds_map_copy(global.entityTags, ds_map_find_value(mapToRead, "2"));
 }

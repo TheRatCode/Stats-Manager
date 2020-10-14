@@ -19,7 +19,7 @@ with (instance_create_layer(256, 32, "Instances", obj_stats_label)) {
 }
 
 //Create the associated stats input boxes
-for (var i = 2; i < ds_map_size(entityArray); i++) {
+for (var i = 3; i < ds_map_size(entityArray); i++) {
 	var inst = instance_create_layer(256, 32*i, "Instances", obj_TI_stats_box);
 	var arr = ds_map_find_value(entityArray, string(i));
 	
