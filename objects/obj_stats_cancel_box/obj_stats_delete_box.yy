@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_x_box",
-    "path": "sprites/spr_x_box/spr_x_box.yy",
+    "name": "spr_text_delete_box",
+    "path": "sprites/spr_text_delete_box/spr_text_delete_box.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,8 +21,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_delete_stats_box","path":"objects/obj_delete_stats_box/obj_delete_stats_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_delete_stats_box","path":"objects/obj_delete_stats_box/obj_delete_stats_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_stats_delete_box","path":"objects/obj_stats_delete_box/obj_stats_delete_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_stats_delete_box","path":"objects/obj_stats_delete_box/obj_stats_delete_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +31,7 @@
     "path": "folders/Objects/Stats Creation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_delete_stats_box",
+  "name": "obj_stats_delete_box",
   "tags": [],
   "resourceType": "GMObject",
 }

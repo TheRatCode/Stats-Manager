@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_x_box",
-    "path": "sprites/spr_x_box/spr_x_box.yy",
+    "name": "spr_text_delete_box",
+    "path": "sprites/spr_text_delete_box/spr_text_delete_box.yy",
   },
   "solid": false,
   "visible": true,

@@ -31,17 +31,14 @@ The entities map contains keys 0 to # and the associated values are the entities
 | 1 | Entity 2 |
 | # | ... |
 
-```sh
-[PLACEHOLDER] the entity value map [2] will contain an array of associated tags when completed
-```
-
-The entity values map contains the name (0), sprite (1), and all associated stats as a 1d 2-item array.
+The entity values map contains the name (0), sprite (1), tags (2), and all associated stats as a 1d 2-item array.
 | Key | Value |
 | ------ | ------ |
 | 0 | Entity Name |
 | 1 | Entity Sprite |
-| 2 | ["Health", 100] |
-| 3 | ["Armor", 10] |
+| 2 | ["Enemy", "Faction 1", "Grunt"]
+| 3 | ["Health", 100] |
+| 4 | ["Armor", 10] |
 | # | ... |
 
 ### Tags Map
