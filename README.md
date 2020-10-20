@@ -11,38 +11,38 @@
 # Using Stats Manager <a name="using-manager"></a>
 Using the stats manager is very easy, and consists of four main rooms.
 
-<img src="https://i.imgur.com/MjrRwQc.png" alt="Main Room" width="250"/>
+<img src="https://i.imgur.com/MjrRwQc.png" alt="Main Room" width="350"/>
 
 ### Create Stats
 You can create up to 16 stats, that can be removed or edited at any time per entity.
 
 <p float="left">
- <img src="https://i.imgur.com/1X1bqrM.png" alt="Stat Creation Room 1" width="250"/>
- <img src="https://i.imgur.com/fBFMHJZ.png" alt="Stat Creation Room 2" width="250"/>
+ <img src="https://i.imgur.com/1X1bqrM.png" alt="Stat Creation Room 1" width="350"/>
+ <img src="https://i.imgur.com/fBFMHJZ.png" alt="Stat Creation Room 2" width="350"/>
  </p>
 
 ### Create Tags
 Creating tags is the same as stats, but only 8 can be assigned to an entity at a time.
 
 <p float="left">
- <img src="https://i.imgur.com/Y0CrQEB.png" alt="Tag Creation Room 1" width="250"/>
- <img src="https://i.imgur.com/m8DtFrW.png" alt="Tag Creation Room 2" width="250"/>
+ <img src="https://i.imgur.com/Y0CrQEB.png" alt="Tag Creation Room 1" width="350"/>
+ <img src="https://i.imgur.com/m8DtFrW.png" alt="Tag Creation Room 2" width="350"/>
  </p>
 
 ### Creating Entities
 To create an entity, you input a name, a sprite url link/directory link, all stat values, and select the appropriate tags, then click create.
 
 <p float="left">
- <img src="https://i.imgur.com/7N93WbG.png" alt="Entity Creation Room 1" width="250"/>
- <img src="https://i.imgur.com/ER8uCD0.png" alt="Entity Creation 2" width="250"/>
+ <img src="https://i.imgur.com/7N93WbG.png" alt="Entity Creation Room 1" width="350"/>
+ <img src="https://i.imgur.com/ER8uCD0.png" alt="Entity Creation Room 2" width="350"/>
  </p>
 
 ### View Entities
 After creating entities, you can view them in pages of 9, and clicking on their images will take you to their information page.
 
 <p float="left">
- <img src="https://i.imgur.com/lxTEXhz.png" alt="Entity Viewer Room 1" width="250"/>
- <img src="https://i.imgur.com/wk4X0od.png" alt="Entity Viewer Room 1" width="250"/>
+ <img src="https://i.imgur.com/lxTEXhz.png" alt="Entity Viewer Room 1" width="350"/>
+ <img src="https://i.imgur.com/wk4X0od.png" alt="Entity Viewer Room 1" width="350"/>
  </p>
 
 # Using Saves <a name="using-saves"></a>
