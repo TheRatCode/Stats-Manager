@@ -4,7 +4,40 @@
 - Add up to 16 tags to easily sort groups of entities.
 - Save & Load stats and entities to .txt files in a JSON format.
 
-# Using Saves
+## Contents
+- [Using Stats Manager](#using-manager)
+- [Using Saves](#using-saves)
+
+# Using Stats Manager <a name="using-manager"></a>
+Using the stats manager is very easy, and consists of four main rooms.
+
+<img src="https://i.imgur.com/MjrRwQc.png" alt="Main Room" width="250"/>
+
+### Create Stats
+You can create up to 16 stats, that can be removed or edited at any time per entity.
+
+<img src="https://i.imgur.com/1X1bqrM.png" alt="Stat Creation Room 1" width="250"/>
+<img src="https://i.imgur.com/fBFMHJZ.png" alt="Stat Creation Room 2" width="250"/>
+
+### Create Tags
+Creating tags is the same as stats, but only 8 can be assigned to an entity at a time.
+
+<img src="https://i.imgur.com/Y0CrQEB.png" alt="Tag Creation Room 1" width="250"/>
+<img src="https://i.imgur.com/m8DtFrW.png" alt="Tag Creation Room 2" width="250"/>
+
+### Creating Entities
+To create an entity, you input a name, a sprite url link/directory link, all stat values, and select the appropriate tags, then click create.
+
+<img src="https://i.imgur.com/7N93WbG.png" alt="Entity Creation Room 1" width="250"/>
+<img src="https://i.imgur.com/ER8uCD0.png" alt="Entity Creation 2" width="250"/>
+
+### View Entities
+After creating entities, you can view them in pages of 9, and clicking on their images will take you to their information page.
+
+<img src="https://i.imgur.com/lxTEXhz.png" alt="Entity Viewer Room 1" width="250"/>
+<img src="https://i.imgur.com/wk4X0od.png" alt="Entity Viewer Room 1" width="250"/>
+
+# Using Saves <a name="using-saves"></a>
 If you would like to use the saved JSON formatted .txt files directly in your game the associated format is as follows:
 All keys are integers as strings, and are enumerable from 0 to # to easily loop through all contents.
 
