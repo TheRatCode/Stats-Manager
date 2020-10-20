@@ -1,8 +1,3 @@
-[![Release](https://img.shields.io/github/release/TheRatCode/RatPoison.svg)](https://github.com/TheRatCode/RatPoison/releases/)
-![Code size](https://img.shields.io/github/languages/code-size/TheRatCode/RatPoison.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/TheRatCode/RatPoison.svg)
-[![Discord](https://discord.com/api/guilds/741016380282896455/widget.png?style=shield)](https://discord.gg/xkTteTM)
-
 # Stats Manager
  Simple stats manager to help with creating games!
 - Create an infinite number of entities based on an optional 16 stats.
