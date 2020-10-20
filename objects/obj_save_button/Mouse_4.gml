@@ -1,4 +1,4 @@
-var fileStr = get_save_filename_ext("Save File|*.txt", "Save1", working_directory, "Stats Manager Saving");
+var fileStr = get_save_filename_ext("Save File|*.txt", "Save1", program_directory, "Stats Manager Saving");
 
 if (fileStr != "") {
 	var mapToWrite = ds_map_create();

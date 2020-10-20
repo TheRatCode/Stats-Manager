@@ -4,7 +4,6 @@ with (obj_B_tags_box) {instance_destroy();}
 with (obj_stats_label) {instance_destroy();}
 with (obj_TI_stats_box) {instance_destroy();}
 
-
 //Load current entity map, this is a reference
 var entityArray = ds_map_find_value(global.entitiesMap, string(entityIndex));
 

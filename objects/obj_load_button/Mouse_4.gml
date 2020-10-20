@@ -1,5 +1,4 @@
-var fileStr = get_open_filename("Load File|*.txt", "");
-
+var fileStr = get_open_filename_ext("Load File|*.txt", "", program_directory, "Stats Manager Loading");
 if (fileStr != "") {
 	var file = file_text_open_read(fileStr);
 	var mapToRead = json_decode(file_text_read_string(file));
