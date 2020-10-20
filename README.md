@@ -16,26 +16,34 @@ Using the stats manager is very easy, and consists of four main rooms.
 ### Create Stats
 You can create up to 16 stats, that can be removed or edited at any time per entity.
 
-<img src="https://i.imgur.com/1X1bqrM.png" alt="Stat Creation Room 1" width="250"/>
-<img src="https://i.imgur.com/fBFMHJZ.png" alt="Stat Creation Room 2" width="250"/>
+<p float="left">
+ <img src="https://i.imgur.com/1X1bqrM.png" alt="Stat Creation Room 1" width="250"/>
+ <img src="https://i.imgur.com/fBFMHJZ.png" alt="Stat Creation Room 2" width="250"/>
+ </p>
 
 ### Create Tags
 Creating tags is the same as stats, but only 8 can be assigned to an entity at a time.
 
-<img src="https://i.imgur.com/Y0CrQEB.png" alt="Tag Creation Room 1" width="250"/>
-<img src="https://i.imgur.com/m8DtFrW.png" alt="Tag Creation Room 2" width="250"/>
+<p float="left">
+ <img src="https://i.imgur.com/Y0CrQEB.png" alt="Tag Creation Room 1" width="250"/>
+ <img src="https://i.imgur.com/m8DtFrW.png" alt="Tag Creation Room 2" width="250"/>
+ </p>
 
 ### Creating Entities
 To create an entity, you input a name, a sprite url link/directory link, all stat values, and select the appropriate tags, then click create.
 
-<img src="https://i.imgur.com/7N93WbG.png" alt="Entity Creation Room 1" width="250"/>
-<img src="https://i.imgur.com/ER8uCD0.png" alt="Entity Creation 2" width="250"/>
+<p float="left">
+ <img src="https://i.imgur.com/7N93WbG.png" alt="Entity Creation Room 1" width="250"/>
+ <img src="https://i.imgur.com/ER8uCD0.png" alt="Entity Creation 2" width="250"/>
+ </p>
 
 ### View Entities
 After creating entities, you can view them in pages of 9, and clicking on their images will take you to their information page.
 
-<img src="https://i.imgur.com/lxTEXhz.png" alt="Entity Viewer Room 1" width="250"/>
-<img src="https://i.imgur.com/wk4X0od.png" alt="Entity Viewer Room 1" width="250"/>
+<p float="left">
+ <img src="https://i.imgur.com/lxTEXhz.png" alt="Entity Viewer Room 1" width="250"/>
+ <img src="https://i.imgur.com/wk4X0od.png" alt="Entity Viewer Room 1" width="250"/>
+ </p>
 
 # Using Saves <a name="using-saves"></a>
 If you would like to use the saved JSON formatted .txt files directly in your game the associated format is as follows:
