@@ -7,6 +7,12 @@ if (selected) {
 		text_input += keyboard_string;
 		keyboard_string = "";
 	}
+	
+	if (room == rm_create_tags) {
+		if (tagsMapIndex != -1) {
+			ds_map_replace(global.entityTags, string(tagsMapIndex), text_input);
+		}
+	}
 }
 
 if (canDelete && deleteObj == -1) {
