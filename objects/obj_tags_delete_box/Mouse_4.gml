@@ -10,5 +10,5 @@ for (var i = 0; i < ds_list_size(tagsList); i++) {
 }
 ds_map_replace_list(entityMap, "2", newTagsList);
 
-instance_destroy(obj_stats_cancel_box);
-instance_destroy(obj_stats_delete_box);
+instance_destroy(obj_tags_cancel_delete_box);
+instance_destroy(obj_tags_delete_box);

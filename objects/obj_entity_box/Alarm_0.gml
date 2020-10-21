@@ -1,8 +1,9 @@
 /// @description Create stats & tags based on selected entity
 //Delete all other entities in room
-with (obj_B_tags_box) {instance_destroy();}
-with (obj_stats_label) {instance_destroy();}
-with (obj_TI_stats_box) {instance_destroy();}
+instance_destroy(obj_B_tags_box);
+instance_destroy(obj_stats_label);
+instance_destroy(obj_TI_stats_box);
+instance_destroy(obj_tags_add_box);
 
 //Load current entity map, this is a reference
 var entityArray = ds_map_find_value(global.entitiesMap, string(entityIndex));
@@ -36,6 +37,7 @@ for (var i = 3; i < ds_map_size(entityArray); i++) {
 	}
 }
 
+var tagsCount = 0;
 var tagsList = ds_map_find_value(entityArray, "2");
 //Create the associated tags boxes
 for (var i = 0; i < ds_list_size(tagsList); i++) {
@@ -46,5 +48,13 @@ for (var i = 0; i < ds_list_size(tagsList); i++) {
 		title_text = tagName;
 		entityIndex = other.entityIndex;
 		tagIndex = i;
+	}
+	
+	tagsCount++;
+}
+
+if (tagsCount < 8) {
+	with (instance_create_layer(x+128, 224, "Instances", obj_tags_add_box)) {
+		entityIndex = other.entityIndex;
 	}
 }
