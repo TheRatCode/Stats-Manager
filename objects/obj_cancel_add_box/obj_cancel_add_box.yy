@@ -21,7 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_tags_cancel_add_box","path":"objects/obj_tags_cancel_add_box/obj_tags_cancel_add_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_cancel_add_box","path":"objects/obj_cancel_add_box/obj_cancel_add_box.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,7 +30,7 @@
     "path": "folders/Objects/Entities Viewer/Edit Tags.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_tags_cancel_add_box",
+  "name": "obj_cancel_add_box",
   "tags": [],
   "resourceType": "GMObject",
 }

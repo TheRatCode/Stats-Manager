@@ -1,6 +1,6 @@
 /// @description Add tag boxes
 //Create cancel box
-instance_create_layer(x+32, y, "Instances", obj_tags_cancel_add_box);
+instance_create_layer(x+32, y, "Instances", obj_cancel_add_box);
 
 //Loop and find valid tags to add
 var tagsArray = global.entityTags;
@@ -8,6 +8,7 @@ var entityArray = ds_map_find_value(global.entitiesMap, string(entityIndex));
 var entityTagsList = ds_map_find_value(entityArray, "2");
 
 var canAddTag = false;
+var realI = 0;
 for (var i = 0; i < ds_map_size(tagsArray); i++) {
 	var tagText = ds_map_find_value(tagsArray, string(i));
 	var containsTag = false;
@@ -20,7 +21,7 @@ for (var i = 0; i < ds_map_size(tagsArray); i++) {
 	}
 	
 	if (!containsTag) {
-		var inst = instance_create_layer(320, 128+(32*i), "Instances", obj_B_add_tag_box);
+		var inst = instance_create_layer(256, 128+(32*realI), "Instances", obj_B_add_tag_box);
 		with (inst) {
 			title_text = tagText;
 			entityIndex = other.entityIndex;
@@ -28,6 +29,7 @@ for (var i = 0; i < ds_map_size(tagsArray); i++) {
 		}
 		
 		canAddTag = true;
+		realI++;
 	}
 }
 

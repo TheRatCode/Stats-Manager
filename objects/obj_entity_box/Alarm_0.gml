@@ -3,7 +3,7 @@
 instance_destroy(obj_B_tags_box);
 instance_destroy(obj_stats_label);
 instance_destroy(obj_TI_stats_box);
-instance_destroy(obj_tags_add_box);
+instance_destroy(obj_add_box);
 
 //Load current entity map, this is a reference
 var entityArray = ds_map_find_value(global.entitiesMap, string(entityIndex));
@@ -54,7 +54,7 @@ for (var i = 0; i < ds_list_size(tagsList); i++) {
 }
 
 if (tagsCount < 8) {
-	with (instance_create_layer(x+128, 224, "Instances", obj_tags_add_box)) {
+	with (instance_create_layer(x+128, 224, "Instances", obj_add_box)) {
 		entityIndex = other.entityIndex;
 	}
 }
