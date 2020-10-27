@@ -3,7 +3,7 @@
 instance_destroy(obj_B_tags_box);
 instance_destroy(obj_stats_label);
 instance_destroy(obj_TI_stats_box);
-instance_destroy(obj_add_box);
+//instance_destroy(obj_add_tag_box);
 
 //Load current entity map, this is a reference
 var entityArray = ds_map_find_value(global.entitiesMap, string(entityIndex));
@@ -37,24 +37,30 @@ for (var i = 3; i < ds_map_size(entityArray); i++) {
 	}
 }
 
-var tagsCount = 0;
-var tagsList = ds_map_find_value(entityArray, "2");
+//var tagsCount = 0;
+//var tagsList = ds_map_find_value(entityArray, "2");
 //Create the associated tags boxes
-for (var i = 0; i < ds_list_size(tagsList); i++) {
-	var inst = instance_create_layer(x, 256+(32*i), "Instances", obj_B_tags_box);
-	var tagName = ds_list_find_value(tagsList, string(i));
-	
-	with (inst) {
-		title_text = tagName;
-		entityIndex = other.entityIndex;
-		tagIndex = i;
-	}
-	
-	tagsCount++;
-}
+//for (var i = 0; i < ds_list_size(tagsList); i++) {
+//	var inst = instance_create_layer(x, 256+(32*i), "Instances", obj_B_tags_box);
+//	var tagName = ds_list_find_value(tagsList, string(i));
+//	
+//	with (inst) {
+//		title_text = tagName;
+//		entityIndex = other.entityIndex;
+//		tagIndex = i;
+//	}
+//	
+//	tagsCount++;
+//}
 
-if (tagsCount < 8) {
-	with (instance_create_layer(x+128, 224, "Instances", obj_add_box)) {
-		entityIndex = other.entityIndex;
+//Create edit stats controller
+//with (instance_create_layer(0, 0, "Instances", c_edit_stats)) {
+	//entityIndex = other.entityIndex;	
+//}
+
+//Create edit tags 
+if (!instance_exists(c_tags_controller)) {
+	with (instance_create_layer(0, 0, "Instances", c_tags_controller)) {
+		entityIndex = other.entityIndex;	
 	}
 }

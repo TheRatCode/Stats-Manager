@@ -17,4 +17,4 @@ if (slot_idx < 16) {
 }
 
 //Reset tags in rm_create_tags
-obj_controller.alarm[2] = 1;
+c_main_controller.alarm[2] = 1;

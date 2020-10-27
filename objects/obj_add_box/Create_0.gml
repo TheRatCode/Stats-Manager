@@ -1,1 +1,0 @@
-entityIndex = -1;

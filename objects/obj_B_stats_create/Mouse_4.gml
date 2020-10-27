@@ -17,4 +17,4 @@ if (slot_idx < 16) {
 }
 
 //Reset stats in rm_create_stats
-obj_controller.alarm[0] = 1;
+c_main_controller.alarm[0] = 1;
