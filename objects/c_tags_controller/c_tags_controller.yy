@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Edit Tags",
-    "path": "folders/Entities Viewer/Edit Tags.yy",
+    "path": "folders/Objects/Entities Viewer/Edit Tags.yy",
   },
   "resourceVersion": "1.0",
   "name": "c_tags_controller",
