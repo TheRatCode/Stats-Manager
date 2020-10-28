@@ -33,7 +33,6 @@
     {"id":{"name":"rm_view_specific_entity","path":"rooms/rm_view_specific_entity/rm_view_specific_entity.yy",},"order":4,},
     {"id":{"name":"obj_save_button","path":"objects/obj_save_button/obj_save_button.yy",},"order":1,},
     {"id":{"name":"obj_B_entity_tags_box","path":"objects/obj_B_entity_tags_box/obj_B_entity_tags_box.yy",},"order":7,},
-    {"id":{"name":"obj_B_tags_box","path":"objects/obj_B_tags_box/obj_B_tags_box.yy",},"order":7,},
     {"id":{"name":"spr_box_middle","path":"sprites/spr_box_middle/spr_box_middle.yy",},"order":8,},
     {"id":{"name":"obj_B_stats_create","path":"objects/obj_B_stats_create/obj_B_stats_create.yy",},"order":1,},
     {"id":{"name":"entityContainsTag","path":"scripts/entityContainsTag/entityContainsTag.yy",},"order":3,},

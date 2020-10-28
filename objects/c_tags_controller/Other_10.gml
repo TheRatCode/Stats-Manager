@@ -18,6 +18,8 @@ if (cancelDeleteButton != -1) {
 	instance_destroy(cancelDeleteButton);
 	cancelDeleteButton = -1;
 }
+
+currentSelectedInst = -1;
 			
 //Call alarm to reset the room
 obj_entity_box.alarm[0] = 1;

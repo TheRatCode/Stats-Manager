@@ -146,6 +146,7 @@ if (currentTagButtons[0] != -1) {
 		}
 	}
 	
+	//If cancelDeleteButton is clicked
 	if (cancelDeleteButton != -1) {
 		if (mouseHovered(cancelDeleteButton)) {
 			//Reset room
