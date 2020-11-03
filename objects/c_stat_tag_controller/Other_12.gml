@@ -1,6 +1,6 @@
-/// @description Handle associated object interaction
+/// @description Handle tag clicks
 
-//If we have an associated add stats button
+//If we have an associated add tags button
 if (addTagsButton != -1) {
 	//If we are hovering this on click
 	if (mouseHovered(addTagsButton)) {
@@ -96,7 +96,7 @@ if (currentTagButtons[0] != -1) {
 			
 		if (inst != -1) {
 			if (mouseHovered(inst)) {
-				currentSelectedInst = inst;
+				currentSelectedTagInst = inst;
 					
 				var tX = inst.x+inst.sprite_width;
 				var tY = inst.y;
@@ -133,7 +133,7 @@ if (currentTagButtons[0] != -1) {
 			
 			//Loop and dont add selected index to new tag list
 			for (var i = 0; i < ds_list_size(entityTagsList); i++) {
-				if (i != currentSelectedInst.tagIndex) {
+				if (i != currentSelectedTagInst.tagIndex) {
 					ds_list_add(newTagsList, ds_list_find_value(entityTagsList, string(i)));	
 				}
 			}

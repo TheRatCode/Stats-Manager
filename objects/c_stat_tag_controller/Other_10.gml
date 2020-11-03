@@ -19,7 +19,7 @@ if (cancelDeleteButton != -1) {
 	cancelDeleteButton = -1;
 }
 
-currentSelectedInst = -1;
+currentSelectedTagInst = -1;
 			
 //Call alarm to reset the room
 obj_entity_box.alarm[0] = 1;

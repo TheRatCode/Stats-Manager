@@ -14,13 +14,13 @@ if (spr != "" && spr != undefined) {
 }
 
 //Create the sprite label
-with (instance_create_layer(256, 32, "Instances", obj_stats_label)) {
-	if (spr != "" && spr != undefined) {
-		title_text = "Sprite: " + spr;
-	} else {
-		title_text = "Sprite: N/A";
-	}
-}
+//with (instance_create_layer(256, 32, "Instances", obj_stats_label)) {
+//	if (spr != "" && spr != undefined) {
+//		title_text = "Sprite: " + spr;
+//	} else {
+//		title_text = "Sprite: N/A";
+//	}
+//}
 
 //Create the associated stats input boxes
 for (var i = 3; i < ds_map_size(entityArray); i++) {
@@ -41,8 +41,8 @@ for (var i = 3; i < ds_map_size(entityArray); i++) {
 //}
 
 //Create edit tags 
-if (!instance_exists(c_tags_controller)) {
-	with (instance_create_layer(0, 0, "Instances", c_tags_controller)) {
+if (!instance_exists(c_stat_tag_controller)) {
+	with (instance_create_layer(0, 0, "Instances", c_stat_tag_controller)) {
 		entityIndex = other.entityIndex;	
 	}
 }

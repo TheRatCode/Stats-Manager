@@ -1,6 +1,6 @@
 /// @description Loop to update if needed
 //Only run in rm_view_specific_entity
-if (room != rm_view_specific_entity) { alarm[0] = alarm0Timer; return; }
+if (room != rm_view_specific_entity) { alarm[1] = alarmUpdateTimer; return; }
 
 var tagsCount = getTagsCount(entityIndex);
 
@@ -9,7 +9,7 @@ if (tagsCount < 8) {
 	//If we have no associated addTagsButton
 	if (addTagsButton == -1) {
 		var tX = obj_entity_box.x+obj_entity_box.sprite_width;
-		var tY = obj_entity_box.y;
+		var tY = obj_entity_box.y+224;
 		
 		var inst = instance_create_layer(tX, tY, "Instances", obj_blank);
 		with (inst) {
@@ -50,4 +50,4 @@ if (instanceArraySize(currentTagButtons) != tagsCount) {
 }
 
 //Reset alarm
-alarm[0] = alarm0Timer;
+alarm[1] = alarmUpdateTimer;
