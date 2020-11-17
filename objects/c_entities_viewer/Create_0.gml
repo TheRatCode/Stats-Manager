@@ -1,9 +1,10 @@
 entityIndex = -1;
 
-//Create update loop
-alarmUpdateTimer = room_speed/4;
-alarm[0] = alarmUpdateTimer; //Tags update timer
-alarm[1] = alarmUpdateTimer; //Stats update timer
+//Delete entity
+deleteEntityButton = instance_create_layer(room_width-64, room_height-64, "Instances", obj_blank);
+with (deleteEntityButton) {
+	sprite_index = spr_delete;
+}
 
 //[[[--STATS--]]]//
 	spritesLabel = -1; //Inst has associated labelText variable

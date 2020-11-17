@@ -41,8 +41,8 @@ for (var i = 3; i < ds_map_size(entityArray); i++) {
 //}
 
 //Create edit tags 
-if (!instance_exists(c_stat_tag_controller)) {
-	with (instance_create_layer(0, 0, "Instances", c_stat_tag_controller)) {
+if (!instance_exists(c_entities_viewer)) {
+	with (instance_create_layer(0, 0, "Instances", c_entities_viewer)) {
 		entityIndex = other.entityIndex;	
 	}
 }
