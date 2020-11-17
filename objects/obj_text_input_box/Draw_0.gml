@@ -1,28 +1,14 @@
-var centerWidth = ((sprite_width)-64)/32;
-var xOff = 32;
-draw_sprite(spr_box_left, -1, x, y);
-for (var i = 0; i < centerWidth; i++) {
-	draw_sprite(spr_box_middle, -1, x+xOff, y);
-	xOff += 32;
-}
-draw_sprite(spr_box_right, -1, x+xOff, y);
-
-
-if (selected) {
-	draw_set_color(c_white);
-	
-	xOff = 32;
-	draw_sprite(spr_box_left_selected, -1, x, y);
-	for (var i = 0; i < centerWidth; i++) {
-		draw_sprite(spr_box_middle_selected, -1, x+xOff, y);
-		xOff += 32;
-	}
-	draw_sprite(spr_box_right_selected, -1, x+xOff, y);
+if (selected) { //Draw selected
+	draw_sprite_ext(spr_text_input_box_selected, -1, x, y, image_xscale, image_yscale, 0, c_white, 1);
 	
 	if (show_cursor) {
 		draw_set_color(c_black);
 		draw_line(x+8 + string_width(text_input), y-8+sprite_height/2, x+8 + string_width(text_input), y+8+sprite_height/2);
 	}
+} else if (mouseHovered(id)) { //Draw highlight
+	draw_sprite_ext(sprite_index, -1, x, y, image_xscale, image_yscale, 0, c_gray, 1);
+} else { //Draw normal	
+	draw_sprite_ext(sprite_index, -1, x, y, image_xscale, image_yscale, 0, c_white, 1);
 }
 
 draw_set_halign(fa_left);

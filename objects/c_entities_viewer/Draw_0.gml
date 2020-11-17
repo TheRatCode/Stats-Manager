@@ -1,9 +1,9 @@
-// Draw text for all associated tempUnusedTagButtons
 draw_set_valign(fa_center);
 draw_set_halign(fa_center);
 draw_set_color(c_black);
 draw_set_alpha(1);
 
+// Draw text for all associated tempUnusedTagButtons
 for (var i = 0; i < array_length_1d(tempUnusedTagButtons); i++) {
 	var inst = tempUnusedTagButtons[i];
 	
